@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyc
+
+# Datos generados por la herramienta
+*.json
+!requirements.json
+diabolic_latam.json
+estado_periodicos_latam.json
+export_latam.json
+export_latam.csv
+
+# Entornos virtuales
+venv/
+env/
+ENV/
+.venv
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
