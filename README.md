@@ -1,5 +1,4 @@
-```markdown
-
+# Diabolic Latam 
 
 ![Version](https://img.shields.io/badge/version-7.0-red)
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
