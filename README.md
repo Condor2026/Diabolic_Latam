@@ -1,5 +1,5 @@
 ```markdown
-# 🔥 DIABOLIC LATAM v7.0
+
 
 ![Version](https://img.shields.io/badge/version-7.0-red)
 ![Release](https://img.shields.io/badge/release-stable-brightgreen)
