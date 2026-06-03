@@ -2,14 +2,10 @@
 
 
 ![Version](https://img.shields.io/badge/version-7.0-red)
-![Release](https://img.shields.io/badge/release-stable-brightgreen)
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![OSINT](https://img.shields.io/badge/OSINT-Si-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Termux%20%7C%20Windows-lightgrey)
-![Termux](https://img.shields.io/badge/Termux-Supported-blue)
-![Windows](https://img.shields.io/badge/Windows-Supported-blue)
-![OSINT](https://img.shields.io/badge/OSINT-Pasivo%20%7C%20Analítico-blueviolet)
-![LGPD](https://img.shields.io/badge/LGPD-Compliant-green)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Countries](https://img.shields.io/badge/countries-18%20Latam-brightgreen)
 
