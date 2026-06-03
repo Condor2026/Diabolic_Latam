@@ -2,11 +2,16 @@
 
 ![Version](https://img.shields.io/badge/version-7.0-red)
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
-![Python](https://img.shields.io/badge/python-3.8%2B-blue)
-![OSINT](https://img.shields.io/badge/OSINT-Si-brightgreen)
+[![Python](https://img.shields.io/badge/python-3.8+-bluee)](https://python.org)
+[![OSINT](https://img.shields.io/badge/OSINT-Pasivo%20%7C%20Analítico-blueviolet)](https://es.wikipedia.org/wiki/OSINT)
+[![Termux](https://img.shields.io/badge/Termux-Compatible-orange)](https://termux.com)
+[![Linux](https://img.shields.io/badge/Linux-Compatible-lightgrey)](https://linux.org)
+[![Web Scraping](https://img.shields.io/badge/Web%20Scraping-Legal-brightgreen)](https://es.wikipedia.org/wiki/Web_scraping)
 ![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Termux%20%7C%20Windows-lightgrey)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Countries](https://img.shields.io/badge/countries-18%20Latam-brightgreen)
+![Communities](https://img.shields.io/badge/communities-15%20CCAA-brightgreen)
+
 
 **DIABOLIC LATAM** es una herramienta OSINT pasiva y analítica diseñada para monitorizar automáticamente **más de 70 periódicos digitales de 18 países latinoamericanos**, extrayendo y procesando noticias de sucesos para detectar patrones delictivos, tendencias geográficas y conexiones entre incidentes, con especial énfasis en **narcotráfico, crimen organizado, violencia y corrupción**.  
 No guarda datos personales, solo titulares, fechas, ubicación por país y tipo de delito. Filosofía: *"Un gran poder conlleva una gran responsabilidad"*.
