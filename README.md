@@ -1,16 +1,16 @@
 # 🔥 DIABOLIC LATAM v7.0
 
-[![Version](https://img.shields.io/badge/version-7.0-red)](https://github.com/Condor2026/Diabolic_Latam)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.8+-green)](https://python.org)
-[![OSINT](https://img.shields.io/badge/OSINT-Passive-blueviolet)](https://es.wikipedia.org/wiki/OSINT)
-[![Termux](https://img.shields.io/badge/Termux-Compatible-orange)](https://termux.com)
-[![Linux](https://img.shields.io/badge/Linux-Compatible-lightgrey)](https://linux.org)
-[![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen?logo=windows)](https://microsoft.com)
-[![Web Scraping](https://img.shields.io/badge/Web%20Scraping-Legal-brightgreen)](https://es.wikipedia.org/wiki/Web_scraping)
-[![GDPR](https://img.shields.io/badge/GDPR-Compliant-blue)](https://ec.europa.eu/info/law/law-topic/data-protection)
-[![LGPD](https://img.shields.io/badge/LGPD-Compliant-blueviolet)](https://www.gov.br/lgpd)
-[![Crimen](https://img.shields.io/badge/Focus-Narco%20%26%20Cártel-red)](https://es.wikipedia.org/wiki/Narcotráfico)
+![Version](https://img.shields.io/badge/version-7.0-red)](https://github.com/Condor2026/Diabolic_Latam)
+![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.8+-green)](https://python.org)
+![OSINT](https://img.shields.io/badge/OSINT-Passive-blueviolet)](https://es.wikipedia.org/wiki/OSINT)
+![Termux](https://img.shields.io/badge/Termux-Compatible-orange)](https://termux.com)
+![Linux](https://img.shields.io/badge/Linux-Compatible-lightgrey)](https://linux.org)
+![Windows](https://img.shields.io/badge/Windows-Compatible-brightgreen?logo=windows)](https://microsoft.com)
+![Web Scraping](https://img.shields.io/badge/Web%20Scraping-Legal-brightgreen)](https://es.wikipedia.org/wiki/Web_scraping)
+![GDPR](https://img.shields.io/badge/GDPR-Compliant-blue)](https://ec.europa.eu/info/law/law-topic/data-protection)
+![LGPD](https://img.shields.io/badge/LGPD-Compliant-blueviolet)](https://www.gov.br/lgpd)
+![Crimen](https://img.shields.io/badge/Focus-Narco%20%26%20Cártel-red)](https://es.wikipedia.org/wiki/Narcotráfico)
 
 **DIABOLIC LATAM** es una herramienta OSINT pasiva y analítica diseñada para **monitorizar automáticamente más de 70 periódicos digitales de 18 países latinoamericanos**, extrayendo y procesando noticias de sucesos para detectar patrones delictivos, tendencias geográficas y conexiones entre incidentes, con **enfoque especial en narcotráfico, crimen organizado, violencia y corrupción**.
 
