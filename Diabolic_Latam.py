@@ -944,7 +944,7 @@ def menu():
         elif op == '5':
             cprint(f"\n🌐 {t('servidor_web')}: http://localhost:{PUERTO}", 'verde', negrita=True)
             cprint(f"   {t('presiona_ctrl_c')}", 'gris')
-            app.run(host='0.0.0.0', port=PUERTO, debug=False)
+            app.run(host='127.0.0.1', port=PUERTO, debug=False)
 
         elif op == '6':
             incidentes = gestor.datos['incidentes'][-20:][::-1]
@@ -1028,7 +1028,7 @@ if __name__ == '__main__':
     if modo == '2':
         cprint(f"\n🌐 {t('servidor_web')}: http://localhost:{PUERTO}", 'verde', negrita=True)
         cprint(f"   {t('presiona_ctrl_c')}", 'gris')
-        app.run(host='0.0.0.0', port=PUERTO, debug=True)
+        app.run(host='127.0.0.1', port=PUERTO, debug=True)
     else:
         menu()
 ~ $
