@@ -1,4 +1,38 @@
-# Diabolic Latam 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=500&color=FF0000&center=true&vCenter=true&width=800&lines=DIABOLIC+LATAM;OSINT+%7C+Python+%7C+Termux+%7C+Linux;Web+Scraping+%7C+An%C3%A1lisis+de+Sucesos;70%2B+peri%C3%B3dicos+%7C+18+pa%C3%ADses;Narcotr%C3%A1fico+%7C+Crimen+Organizado+%7C+Violencia;Patrones+delictivos+%7C+Tendencias+geogr%C3%A1ficas;%22Un+gran+poder...%22;PRs+Welcome+%7C+Communities+%7C+Code+is+Law" alt="Typing animation" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Proyecto-DIABOLIC%20LATAM-red?style=for-the-badge" alt="Proyecto">
+  <img src="https://img.shields.io/badge/Idioma-Español-red?style=for-the-badge" alt="Idioma">
+  <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-brightgreen?style=for-the-badge" alt="Estado">
+  <img src="https://img.shields.io/badge/Licencia-MIT-blue?style=for-the-badge" alt="Licencia">
+  <img src="https://img.shields.io/badge/Plataforma-Termux%20%7C%20Linux-orange?style=for-the-badge" alt="Plataforma">
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge" alt="PRs Welcome">
+</p>
+
+---
+
+<div align="center">
+  <h3>⚠️ AVISO IMPORTANTE</h3>
+  <p>
+    <strong>Herramienta OSINT pasiva y analítica con fines educativos y de investigación.</strong><br>
+    No guarda datos personales, solo titulares, fechas, ubicación por país y tipo de delito.<br>
+    Filosofía: <em>"Un gran poder conlleva una gran responsabilidad"</em>
+  </p>
+</div>
+
+---
+
+# DIABOLIC LATAM
+
+**OSINT | Python | Termux | Linux | Web Scraping**
+
+
+## 📁 Estructura
+
 
 ![Version](https://img.shields.io/badge/version-7.0-red)
 ![License](https://img.shields.io/badge/license-GPLv3-blue)
