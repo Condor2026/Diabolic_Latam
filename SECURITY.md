@@ -1,67 +1,55 @@
-# 🔒 Política de Seguridad de DIABOLIC LATAM
+# Política de seguridad — DIABOLIC LATAM
 
-## 📌 Versiones compatibles
+## Versiones soportadas
 
-Actualmente, solo la última versión estable de **DIABOLIC LATAM** recibe actualizaciones de seguridad. 
-Si usas una versión anterior, te recomendamos actualizar a la más reciente.
+| Versión | Soporte |
+|---------|---------|
+| 8.x     | ✅ Sí   |
+| ≤ 7.x   | ❌ No   |
 
-| Versión | Soportada |
-|---------|------------|
-| 6.0     | ✅ Sí      |
-| < 6.0   | ❌ No      |
+## Cómo reportar una vulnerabilidad
 
----
+Abre un **issue privado** en el repositorio o contacta con el mantenedor (Condor2026) indicando:
 
-## 🐞 Reportar una vulnerabilidad
+- Versión afectada.
+- Descripción del problema.
+- Pasos para reproducirlo.
+- Impacto potencial.
 
-Si encuentras una vulnerabilidad de seguridad en DIABOLIC LATAM, te agradecemos que nos ayudes a mantener el proyecto seguro. 
-Puedes reportarla de dos formas:
+No publiques exploits antes de que se haya corregido.
 
-1. **Abrir un "Issue" privado** (recomendado):
-   - Ve a la pestaña **"Security"** del repositorio.
-   - Haz clic en **"Report a vulnerability"**.
-   - Rellena el formulario con los detalles del fallo.
+## Superficie de ataque conocida
 
-2. **Contacto directo** (si prefieres más privacidad):
-   - Envía un mensaje a través de GitHub a **@Condor2026**.
-   - O abre un issue público si el problema no es sensible.
+DIABOLIC LATAM es una herramienta local, pero expone un panel web Flask (por defecto en `127.0.0.1:5013`). Puntos a tener en cuenta:
 
----
+### Autenticación
+- **No hay autenticación.** Si se ejecuta con `--host 0.0.0.0`, cualquiera en la red local puede:
+  - Lanzar scans (`/api/scan`, `/api/verify`).
+  - Disparar la alarma (`/api/alarm/test`).
+  - Añadir fuentes (`/api/sources/add`).
+  - Modificar el umbral de alarma (`/api/alarm/config`).
+  - Cambiar el nivel de alerta regional (`/api/vigipirate`).
 
-## 🛡️ Qué esperar después del reporte
+**Recomendación**: mantener `127.0.0.1` salvo que se use un proxy autenticado por delante.
 
-- **Acuse de recibo**: Te confirmaremos que hemos recibido tu reporte en un plazo de **48-72 horas**.
-- **Investigación**: Analizaremos el problema y te pediremos más detalles si es necesario.
-- **Resolución**: Si el reporte es válido, trabajaremos en una solución y la publicaremos en la siguiente versión.
-- **Reconocimiento**: Te daremos crédito público por el hallazgo (si lo deseas) en los agradecimientos del proyecto.
+### CSRF
+- Todos los POST exigen la cabecera `X-DF: 1`. Esto impide que una página de terceros abierta en el mismo navegador lance acciones sobre `localhost` sin permiso. **No es autenticación**: un `curl` directo sigue funcionando.
 
----
+### XSS
+- El frontend escapa todo con `esc()` y solo permite `http(s)://` en enlaces generados (`safeUrl()`). Los titulares provienen de fuentes externas, así que se tratan como no confiables.
 
-## 📋 Buenas prácticas al reportar
+### Dependencias externas (CDN)
+- El panel carga Leaflet, Chart.js, vis-network y Google Fonts desde CDN. Si el usuario opera en red restringida o quiere evitar dependencias externas, debe alojarlos localmente y ajustar las URLs en `HTML_TEMPLATE`.
 
-- Incluye una **descripción clara** del problema.
-- Adjunta **pasos para reproducirlo** (si es posible).
-- Especifica la **versión de DIABOLIC LATAM** y del **sistema operativo** donde lo detectaste (Linux, Termux, Windows, etc.).
-- Si tienes una propuesta de solución, ¡compártela!
+### Scraping
+- El scraper realiza peticiones HTTP a sitios de terceros. Por defecto **no** respeta `robots.txt` (heredado de la v1); se puede activar con `--robots`.
+- Las peticiones incluyen user-agents rotativos y delays aleatorios, pero no hay proxies.
 
----
+### Almacenamiento
+- Los datos se guardan en JSON local (`diabolic_narco.json`, `estado_fuentes_narco.json`, `url_cache_narco.json`, `diabolic_latam.log`). No se cifran. No contienen datos personales, solo titulares, fechas, ubicación aproximada y tipo de delito.
 
-## 🧪 Divulgación responsable
+## Buenas prácticas
 
-Te pedimos que **no reveles públicamente** la vulnerabilidad hasta que hayamos tenido la oportunidad de solucionarla.
-Así protegemos a los usuarios mientras trabajamos en el parche.
-
----
-
-## 🌎 Nota para Latinoamérica
-
-Esta herramienta es utilizada por investigadores, periodistas y ciudadanos en toda la región. La seguridad es fundamental 
-para garantizar que el análisis de patrones delictivos siga siendo confiable, ético y sin riesgos para los usuarios. 
-Agradecemos tu colaboración responsable.
-
----
-
-¡Gracias por ayudar a hacer **DIABOLIC LATAM** más seguro!
-
-**SpectrumSecurity / Condor2026**  
-Última actualización: mayo 2026
+- No exponer el panel a Internet sin autenticación.
+- Revisar `estado_fuentes_narco.json` si se añaden fuentes desde el panel: el campo `url` se adopta automáticamente.
+- Mantener las dependencias actualizadas (`pip install -U flask requests beautifulsoup4`).
