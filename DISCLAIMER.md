@@ -1,76 +1,51 @@
+# Aviso legal y directrices éticas — DIABOLIC LATAM
 
-⚖️ AVISO LEGAL Y ÉTICO - DIABOLIC LATAM v6.0
+## Naturaleza de la herramienta
 
-1. PROPÓSITO DE LA HERRAMIENTA
+DIABOLIC LATAM es una herramienta **OSINT pasiva y analítica** para el estudio de noticias públicas sobre narcotráfico, crimen organizado, violencia armada, finanzas ilícitas y corrupción en América Latina.
 
-DIABOLIC LATAM es una herramienta OSINT (Open Source Intelligence) de código abierto diseñada para analizar
-noticias públicas procedentes de periódicos digitales de 18 países latinoamericanos y detectar patrones delictivos 
-(robos, estafas, narcotráfico, violencia, extorsión, feminicidio, sicariato, desapariciones, etc.) con fines de:
+- **No** accede a datos personales.
+- **No** realiza vigilancia de individuos.
+- **No** interactúa con los sistemas de las fuentes más allá de peticiones HTTP equivalentes a las de un lector humano.
+- **No** vulnera accesos, credenciales ni medidas de seguridad.
 
-· Periodismo de datos e investigación.
-· Estudios criminológicos y sociológicos en la región.
-· Información para organizaciones vecinales y ciudadanía en general.
-· Prevención comunitaria y concienciación social.
+## Datos tratados
 
-No es una herramienta de vigilancia masiva, ni de perfilamiento de personas, 
-ni sustituye a las fuerzas y cuerpos de seguridad de cada país.
+Solo se almacenan metadatos públicos:
 
-2. RESPONSABILIDAD DEL USUARIO
+- Titular de la noticia.
+- Fecha.
+- Fuente.
+- Ubicación aproximada (ciudad, estado/departamento o país).
+- Tipo de delito, categoría, severidad y confianza.
 
-El usuario es el único responsable del uso que haga de esta herramienta y de la interpretación de los datos obtenidos.
+No se almacenan nombres de personas, direcciones, teléfonos, correos ni identificadores.
 
-Queda terminantemente prohibido utilizar DIABOLIC LATAM para:
+## Cumplimiento normativo
 
-· Vigilancia ilegal o no consentida.
-· Perfilamiento de personas físicas.
-· Actividades discriminatorias, racistas, xenófobas o que atenten contra los derechos fundamentales.
-· Cualquier fin que vulnere la legislación vigente de cada país (especialmente en materia de protección de datos, 
-privacidad y ciberseguridad).
+- **RGPD / LGPD (Brasil) / LOPDGDD**: al no tratar datos personales, la herramienta queda fuera del ámbito de aplicación de estas normas.
+- **Propiedad intelectual**: no se republica el contenido íntegro de las noticias; solo titulares y metadatos.
 
-Los datos mostrados proceden de fuentes públicas (periódicos digitales) y su exactitud depende de dichas fuentes. 
-El usuario debe contrastar la información antes de tomar decisiones basadas en ella.
+## Scraping
 
-3. PROTECCIÓN DE DATOS (LGPD / leyes locales)
+- Por defecto **no** se respeta `robots.txt` (heredado de la v1). Se puede activar con `--robots`.
+- Se aplican delays aleatorios y rate limiting por host.
+- El usuario es responsable de respetar los términos de uso de cada fuente.
 
-DIABOLIC LATAM no almacena ni procesa datos personales 
-(nombres, direcciones, documentos de identidad, números de teléfono, direcciones IP, cookies, etc.).
+## Alarma sonora
 
-Únicamente guarda, de forma local en el dispositivo del usuario, metadatos como: 
-titular de la noticia, fecha de publicación, ubicación geográfica aproximada (país), tipo de delito y fuente.
+La herramienta puede emitir una **sirena** en el navegador cuando detecta violencia armada. El usuario debe poder silenciarla (botones "mute", "stop", "ack" en el panel).
 
-Al no tratar datos personales, la herramienta queda fuera del ámbito de aplicación de leyes como la LGPD (Brasil), 
-leyes de protección de datos de cada país latinoamericano y normativas internacionales como el GDPR cuando se usa para 
-fines legítimos.
+## Alertas oficiales
 
-4. PROPIEDAD INTELECTUAL
+Las alertas oficiales se muestran **tal cual** las publica el organismo emisor (DEA, OFAC, UNODC, fiscalías, policías, UIF, GAFILAT…). No son interpretación del proyecto ni constituyen asesoramiento legal.
 
-Las noticias analizadas pertenecen a sus respectivos medios de comunicación. DIABOLIC LATAM se limita a extraer 
-titulares y metadatos para su procesamiento, sin republicar los contenidos íntegros ni vulnerar los derechos de autor.
+## Exención de responsabilidad
 
-El código fuente es abierto (licencia MIT) y puede ser reutilizado, modificado y distribuido siempre que se mantenga 
-el espíritu ético de la herramienta y se cite la fuente original.
+La herramienta se proporciona **"tal cual"**, sin garantías de funcionamiento ininterrumpido ni de exactitud de los datos. Cualquier modificación que introduzca funcionalidades lesivas (recogida de datos personales, vigilancia encubierta) es responsabilidad exclusiva de quien la realice.
 
-5. EXENCIÓN DE RESPONSABILIDAD
+## Principios éticos
 
-El desarrollador y los colaboradores no se hacen responsables del mal uso que terceros puedan hacer de esta herramienta, 
-ni de las consecuencias legales, éticas o sociales derivadas de dicho mal uso.
-
-La herramienta se proporciona "tal cual", sin garantías de funcionamiento ininterrumpido, libre de errores o de adecuación a fines específicos.
-
-Cualquier modificación del código que introduzca funcionalidades lesivas (recogida de datos personales, vigilancia encubierta, etc.) 
-es responsabilidad exclusiva de quien la realice.
-
-6. FILOSOFÍA DEL PROYECTO
-
-"Un gran poder conlleva una gran responsabilidad" - Spiderman
-
-DIABOLIC LATAM nace con vocación de transparencia, utilidad social y respeto absoluto a la legalidad. 
-Creemos en el poder de los datos abiertos para construir comunidades más informadas y seguras, 
-siempre desde el respeto a los derechos individuales.
-
-Si no estás de acuerdo con estos principios, te rogamos que no utilices la herramienta.
-
----
-
-Última actualización: mayo 2026
-SpectrumSecurity (GitHub: Condor2026)
+- **Transparencia**: código abierto, auditable.
+- **No vigilancia**: sin perfilado de personas.
+- **Responsabilidad**: el usuario es el único responsable del uso.
