@@ -1,6 +1,10 @@
 # Dependencias necesarias para DIABOLIC LATAM v6.0
 # Instalar con: pip install -r requirements.txt
 
-requests>=2.25.0
-beautifulsoup4>=4.9.3
-flask>=2.0.0
+flask>=3.0
+requests>=2.31
+beautifulsoup4>=4.12
+
+# Opcionales (gráficos estáticos PNG y red)
+# matplotlib>=3.8
+# networkx>=3.2
